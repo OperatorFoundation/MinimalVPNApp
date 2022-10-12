@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "minimalvpnlibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OperatorFoundation/MinimalVPNLibrary.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "405eae76c16895d7b6d01fd2ba7511080b702d5e"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "6fe203dc33195667ce1759bf0182975e4653ba1c",
+        "version" : "1.4.4"
+      }
+    }
+  ],
+  "version" : 2
+}
