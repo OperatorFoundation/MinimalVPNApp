@@ -11,6 +11,7 @@
 		EF3FB26828F737750088D522 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3FB26728F737750088D522 /* PacketTunnelProvider.swift */; };
 		EF3FB26D28F737750088D522 /* MinimalVPNNetworkExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF3FB26228F737750088D522 /* MinimalVPNNetworkExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EF3FB27228F7394C0088D522 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3FB26428F737750088D522 /* NetworkExtension.framework */; };
+		EF3FB27428F73FA10088D522 /* MinimalVPNLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = EF3FB27328F73FA10088D522 /* MinimalVPNLibrary */; };
 		EF97684D28F636D200E4AD1A /* MinimalVPNApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97684C28F636D200E4AD1A /* MinimalVPNApp.swift */; };
 		EF97684F28F636D200E4AD1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF97684E28F636D200E4AD1A /* ContentView.swift */; };
 		EF97685128F636D300E4AD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF97685028F636D300E4AD1A /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF3FB26528F737750088D522 /* NetworkExtension.framework in Frameworks */,
+				EF3FB27428F73FA10088D522 /* MinimalVPNLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +209,9 @@
 			dependencies = (
 			);
 			name = MinimalVPNNetworkExtension;
+			packageProductDependencies = (
+				EF3FB27328F73FA10088D522 /* MinimalVPNLibrary */,
+			);
 			productName = MinimalVPNNetworkExtension;
 			productReference = EF3FB26228F737750088D522 /* MinimalVPNNetworkExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -426,7 +431,6 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = OperatorFoundation.MinimalVPNApp.MinimalVPNNetworkExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,7 +459,6 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = OperatorFoundation.MinimalVPNApp.MinimalVPNNetworkExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -773,6 +776,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EF3FB27328F73FA10088D522 /* MinimalVPNLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF97687728F6D88E00E4AD1A /* XCRemoteSwiftPackageReference "MinimalVPNLibrary" */;
+			productName = MinimalVPNLibrary;
+		};
 		EF97687828F6D88E00E4AD1A /* MinimalVPNLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EF97687728F6D88E00E4AD1A /* XCRemoteSwiftPackageReference "MinimalVPNLibrary" */;

@@ -20,11 +20,12 @@ struct ContentView: View
             self.vpn.enable()
             do
             {
+                print("MinimalVPNAPP: calling startVPNTunnel")
                 try self.vpn.manager.connection.startVPNTunnel()
             }
             catch
             {
-                print("Failed to start the tunnel: \(error)")
+                print("MinimalVPNApp: Failed to start the tunnel: \(error)")
             }
         }
         

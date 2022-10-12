@@ -6,7 +6,7 @@
       "location" : "https://github.com/OperatorFoundation/MinimalVPNLibrary.git",
       "state" : {
         "branch" : "main",
-        "revision" : "c36903ac4264916203afffbb374fa04bd69847d8"
+        "revision" : "6c091223934a50e6624ea35f13414623a65c0019"
       }
     },
     {
@@ -16,6 +16,15 @@
       "state" : {
         "revision" : "6fe203dc33195667ce1759bf0182975e4653ba1c",
         "version" : "1.4.4"
+      }
+    },
+    {
+      "identity" : "swifttestutils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OperatorFoundation/SwiftTestUtils.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1248bb1e13356c330d1a43a1528feb1a394704db"
       }
     }
   ],
