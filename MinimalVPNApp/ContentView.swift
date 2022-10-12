@@ -14,25 +14,39 @@ struct ContentView: View
 
     var body: some View
     {
-        Text("🫧 MinimalVPN 🫧")
-        Button("Connect")
+        VStack()
         {
-            self.vpn.enable()
-            do
+            Text("🫧 MinimalVPN 🫧")
+            
+            Button("Connect")
             {
-                print("MinimalVPNAPP: calling startVPNTunnel")
-                try self.vpn.manager.connection.startVPNTunnel()
+                print("MinimalVPNAPP: 👆 Connect button tapped.")
+                
+                if (!self.vpn.manager.isEnabled)
+                {
+                    print("MinimalVPNAPP: calling enable()")
+                    self.vpn.enable()
+                }
+                
+                do
+                {
+                    print("MinimalVPNAPP: calling startVPNTunnel")
+                    try self.vpn.manager.connection.startVPNTunnel()
+                }
+                catch
+                {
+                    print("MinimalVPNApp: Failed to start the tunnel: \(error)")
+                }
             }
-            catch
+            
+            Button("Disconnect")
             {
-                print("MinimalVPNApp: Failed to start the tunnel: \(error)")
+                print("MinimalVPNAPP: 👆 Connect button tapped.")
+                
+                self.vpn.manager.connection.stopVPNTunnel()
             }
         }
-        
-        Button("Disconnect")
-        {
-            self.vpn.manager.connection.stopVPNTunnel()
-        }
+        .padding()
     }
 }
 
