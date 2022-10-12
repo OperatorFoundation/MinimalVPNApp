@@ -10,7 +10,7 @@ import MinimalVPNLibrary
 
 struct ContentView: View
 {
-    let vpn = VPNManager()
+    let vpn = VPNManager(serverIP: "127.0.0.1")
 
     var body: some View
     {
