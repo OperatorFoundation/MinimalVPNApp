@@ -20,18 +20,6 @@ public class VPNManager
         self.manager.isEnabled = false
     }
 
-//    public func load()
-//    {
-//        print("Loading...")
-//
-//        self.manager.loadFromPreferences
-//        {
-//            maybeError in
-//
-//            print("Loaded.")
-//        }
-//    }
-
     public func enable()
     {
         self.manager.loadFromPreferences
@@ -67,9 +55,8 @@ public class VPNManager
                     }
 
                     let protocolConfiguration = NETunnelProviderProtocol()
-                    let appId = Bundle.main.bundleIdentifier!
-                    protocolConfiguration.providerBundleIdentifier = "\(appId).MinimalVPNNetworkExtension"
-                    protocolConfiguration.serverAddress = self.serverIP
+                    protocolConfiguration.providerBundleIdentifier = "\(Bundle.main.bundleIdentifier!).MinimalVPNNetworkExtension"
+                    protocolConfiguration.serverAddress = ""
                     protocolConfiguration.includeAllNetworks = true
                     self.manager.protocolConfiguration = protocolConfiguration
                     self.manager.localizedDescription = "MinimalVPNApp"

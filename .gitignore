@@ -1,4 +1,6 @@
 
 *.xcuserstate
-MinimalVPNApp.xcodeproj/xcuserdata/
-MinimalVPNApp.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+*xcuserdata/
+*swiftpm/Package.resolved
+.DS_Store
+Package.resolved

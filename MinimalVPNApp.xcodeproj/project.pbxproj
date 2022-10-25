@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE90E3E42903194E0034B3A6 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90E3E32903194E0034B3A6 /* VPNManager.swift */; };
 		EF3FB26528F737750088D522 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3FB26428F737750088D522 /* NetworkExtension.framework */; };
 		EF3FB26828F737750088D522 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3FB26728F737750088D522 /* PacketTunnelProvider.swift */; };
 		EF3FB26D28F737750088D522 /* MinimalVPNNetworkExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EF3FB26228F737750088D522 /* MinimalVPNNetworkExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -61,6 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE90E3E2290318B60034B3A6 /* MinimalVPNLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MinimalVPNLibrary; path = ../MinimalVPNLibrary; sourceTree = "<group>"; };
+		AE90E3E32903194E0034B3A6 /* VPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
 		EF3FB26228F737750088D522 /* MinimalVPNNetworkExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MinimalVPNNetworkExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3FB26428F737750088D522 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		EF3FB26728F737750088D522 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
@@ -137,9 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				EF97684B28F636D200E4AD1A /* MinimalVPNApp */,
+				EF3FB26628F737750088D522 /* MinimalVPNNetworkExtension */,
 				EF97685D28F636D300E4AD1A /* MinimalVPNAppTests */,
 				EF97686728F636D300E4AD1A /* MinimalVPNAppUITests */,
-				EF3FB26628F737750088D522 /* MinimalVPNNetworkExtension */,
+				AE90E3E2290318B60034B3A6 /* MinimalVPNLibrary */,
 				EF3FB26328F737750088D522 /* Frameworks */,
 				EF97684A28F636D200E4AD1A /* Products */,
 			);
@@ -161,6 +165,7 @@
 			children = (
 				EF97684C28F636D200E4AD1A /* MinimalVPNApp.swift */,
 				EF97684E28F636D200E4AD1A /* ContentView.swift */,
+				AE90E3E32903194E0034B3A6 /* VPNManager.swift */,
 				EF97685028F636D300E4AD1A /* Assets.xcassets */,
 				EF97685528F636D300E4AD1A /* MinimalVPNApp.entitlements */,
 				EF97685228F636D300E4AD1A /* Preview Content */,
@@ -317,9 +322,9 @@
 			projectRoot = "";
 			targets = (
 				EF97684828F636D200E4AD1A /* MinimalVPNApp */,
+				EF3FB26128F737750088D522 /* MinimalVPNNetworkExtension */,
 				EF97685928F636D300E4AD1A /* MinimalVPNAppTests */,
 				EF97686328F636D300E4AD1A /* MinimalVPNAppUITests */,
-				EF3FB26128F737750088D522 /* MinimalVPNNetworkExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -371,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF97684F28F636D200E4AD1A /* ContentView.swift in Sources */,
+				AE90E3E42903194E0034B3A6 /* VPNManager.swift in Sources */,
 				EF97684D28F636D200E4AD1A /* MinimalVPNApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
