@@ -56,7 +56,7 @@ public class VPNManager
 
                     let protocolConfiguration = NETunnelProviderProtocol()
                     protocolConfiguration.providerBundleIdentifier = "\(Bundle.main.bundleIdentifier!).MinimalVPNNetworkExtension"
-                    protocolConfiguration.serverAddress = ""
+                    protocolConfiguration.serverAddress = self.serverIP
                     protocolConfiguration.includeAllNetworks = true
                     self.manager.protocolConfiguration = protocolConfiguration
                     self.manager.localizedDescription = "MinimalVPNApp"
